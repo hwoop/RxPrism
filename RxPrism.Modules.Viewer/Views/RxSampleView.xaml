@@ -1,0 +1,27 @@
+﻿<cv:RxUserControlBase x:Class="RxPrism.Modules.Viewer.Views.RxSampleView"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:cv="clr-namespace:RxPrism.Core.Views;assembly=RxPrism.Core"
+                      xmlns:vm="clr-namespace:RxPrism.Modules.Viewer.ViewModels"
+                      x:TypeArguments="vm:RxSampleViewModel"
+                      xmlns:prism="http://prismlibrary.com/"
+                      prism:ViewModelLocator.AutoWireViewModel="True" >
+    <Grid Background="White">
+        <StackPanel VerticalAlignment="Center">
+            <TextBox x:Name="UserName"
+                     MinWidth="150" MaxWidth="200"
+                     MinHeight="20" MaxHeight="30"
+                     Margin="0 0 0 5"/>
+
+            <TextBox x:Name="Password"
+                     MinWidth="150" MaxWidth="200"
+                     MinHeight="20" MaxHeight="30"
+                     Margin="0 5 0 0"/>
+
+            <Button x:Name="ExecuteButton" 
+                    Content="Execute"
+                    MaxWidth="200"
+                    Margin="0 5 0 0"/>
+        </StackPanel>
+    </Grid>
+</cv:RxUserControlBase>

@@ -1,0 +1,14 @@
+﻿<Window x:Class="RxPrism.App.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:core="clr-namespace:RxPrism.Core;assembly=RxPrism.Core"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{Binding Title}" Height="350" Width="525" >
+    <Grid Background="Gray">
+        <TextBlock Text="Placeholder" VerticalAlignment="Top" HorizontalAlignment="Center"
+                   FontSize="10" FontFamily="Helvetica"/>
+
+        <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.ContentRegion}" Margin="15"/>
+    </Grid>
+</Window>
