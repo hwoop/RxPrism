@@ -1,7 +1,19 @@
 ﻿namespace RxPrism.Core
 {
-    public static class RegionNames
+    public static partial class RegionNames
     {
-        public const string ContentRegion = "ContentRegion";
+        #region Modules.Viewer
+
+        public const string ImageRegion = "Modules.Viewer.ImageRegion";
+        public const string ControllerRegion = "Modules.Viewer.ControllerRegion";
+
+        #endregion
+
+        
+        #region Core
+
+        public const string ContentRegion = "Core.ContentRegion";
+
+        #endregion
     }
 }

@@ -11,4 +11,9 @@
   <ItemGroup>
     <ProjectReference Include="..\RxPrism.Modules.Viewer\RxPrism.Modules.Viewer.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="sample.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

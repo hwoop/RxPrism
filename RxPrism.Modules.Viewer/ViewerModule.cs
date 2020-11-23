@@ -18,14 +18,18 @@ namespace RxPrism.Modules.Viewer
 
         public void OnInitialized(IContainerProvider containerProvider)
         {
-            _regionManager.RequestNavigate(RegionNames.ContentRegion, nameof(RxSampleView));
-            // _regionManager.RequestNavigate(RegionNames.ContentRegion, nameof(SampleView));
+            //_regionManager.RequestNavigate(RegionNames.ContentRegion, nameof(RxSampleView));
+            //_regionManager.RequestNavigate(RegionNames.ContentRegion, nameof(SampleView));
+            _regionManager.RequestNavigate(RegionNames.ContentRegion, nameof(ImageControllerView));
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<SampleView, SampleViewModel>();
             containerRegistry.RegisterForNavigation<RxSampleView, RxSampleViewModel>();
+
+            containerRegistry.RegisterForNavigation<ImageControllerView, ImageControllerViewModel>();
+            containerRegistry.RegisterForNavigation<ImageView, ImageViewModel>();
         }
     }
 }
